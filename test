@@ -1,0 +1,83 @@
+question 7
+# Write a function to generate the Fibonacci sequence up to n terms using a loop.
+n_terms = int(input("How many terms? "))
+# first two terms
+n1, n2 = 0, 1
+count = 0
+while count < n_terms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
+
+
+
+question 8
+fruits= ['apple','mango','banana','orange']
+for i in fruits:
+    print(i)
+
+
+# while loop
+val=int(input("enter multiple of 7"))
+while val%7!=0:
+    val=int(input("enter the multiple of 7"))
+else:
+    print("%d is a multiple of 7"%val)
+print()
+
+question 9
+def second_largest(numbers):
+    first = 0
+    second = 0
+    for n in numbers:
+        if n > first:
+            first, second = n, first
+        elif first > n > second:
+            second = n
+    return second or None
+print(second_largest([1,8, 3, 4, 5])
+
+question 10
+def unique_in_order(iterable):
+    res =[]
+    previous =''
+    for y in iterable:
+        if y != previous:
+            res.append(y)
+            previous=y
+    return res
+print(unique_in_order('AAAABBBCCDAABBB'))
+print(unique_in_order('ABBCcAD'))
+print(unique_in_order('11324278233')
+
+question 11
+n=int(input("Enter a number"))
+def factoorial(n):
+        if (n==1 or n==0):
+            return 1
+        else:
+            return n*factoorial(n-1)
+print(f"The Factorial of {n} is : {factoorial(n)}")
+
+question 12
+def greet (fx):
+    def mfx():
+        print('i am a programmer')
+        fx()
+        print('i am a python programmer')
+    return(mfx)
+@greet
+def hello():
+    print('Hello World')
+hello()
+
+question 13
+a = open(" file.txt" , "w")
+a.write(" I  am Hassan")
+a.close()
+b= open(" file.txt" ,"r")
+print(b.read())
+b.close()
