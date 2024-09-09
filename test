@@ -29,16 +29,11 @@ else:
 print()
 
 question 9
-def second_largest(numbers):
-    first = 0
-    second = 0
-    for n in numbers:
-        if n > first:
-            first, second = n, first
-        elif first > n > second:
-            second = n
-    return second or None
-print(second_largest([1,8, 3, 4, 5])
+list = [1,2,3,4,5,6,7]
+list_2 = set(list)
+list_2.remove(max(list))
+print(max(list_2))
+
 
 question 10
 def unique_in_order(iterable):
